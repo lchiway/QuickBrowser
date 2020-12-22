@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|end"
+        android:layout_margin="16dp"
+        android:src="@mipmap/add_icon"
+        app:backgroundTint="@color/colorAccent"
+        app:elevation="8dp"
+        app:fabSize="mini"
+        app:pressedTranslationZ="10dp"
+        app:rippleColor="#fff" />
+
+    <ListView
+        android:id="@+id/web_url_show"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"/>
+
+</LinearLayout>
